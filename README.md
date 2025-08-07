@@ -1,12 +1,12 @@
 # Agentic IA for movie recommendations with Python and Strands Agents
 
-Context 1: I like to go to the cinema. I normally go to the cinema on Saturday afternoons, at the first showing. In the city where I live there are three cinemas and all belong to the same company called Sade. I normally check the cinema schedules on their website, SadeCines.com, to see what's playing. Also, I track the movies I see on Letterboxd. There I have my diary and also a list with the movies I see in the cinema. I rate the movies when I finish watching them. My first impression. I do that not to share with others, only to have a personal record of what I like and dislike.
+Context 1: I like to go to the cinema. I normally go to the cinema on Saturday afternoons, at the first showing. In the city where I live there are three cinemas and all belong to the same company called Sade. I normally check the cinema schedules on their website, [SadeCines.com](https://sadecines.com/), to see what's playing. Also, I track the movies I see on Letterboxd. There I have my [diary](https://letterboxd.com/gonzalo123/films/diary/) and also a [list](https://letterboxd.com/gonzalo123/list/cine-2025/detail/) with the movies I see in the cinema. I rate the movies when I finish watching them. My first impression. I do that not to share with others, only to have a personal record of what I like and dislike.
 
-Context 2: I'm on holidays and I like to code also, so I decided to build an AI agent that helps me decide what movie to watch on Saturday afternoons. This project is an example of over-engineering, I know, but I've done it as an exercise using Strands Agents, a framework for building multi-tool LLM agents that I'm using these days.
+Context 2: I'm on holidays and I like to code also, so I decided to build an AI agent that helps me decide what movie to watch on Saturday afternoons. This project is an example of over-engineering, I know, but I've done it as an exercise using [Strands Agents](https://strandsagents.com/latest/), a framework for building multi-tool LLM agents that I'm using these days.
 
 The aim of the project is to create an AI agent that can access the internet to check the cinema schedules, my Letterboxd profile, and then recommend me a movie to watch on Saturday afternoons. Normally the LLMs are good at reasoning, but they don't have access to the internet. Also, they are not good at doing mathematical operations, but with agents we can use tools to do that. So I decided to build an agent that can access the internet (to check the cinema schedules, my Letterboxd profile and IMDb/Metacritic's scores) and create the needed code to do the mathematical operations needed.
 
-Strands Agents (it is similar to LangChain) allows us to build multi-tool LLM agents. In this example I'm using the pre-built tools provided by the framework, like:
+Strands Agents (it is similar to [LangChain](https://www.langchain.com/)) allows us to build multi-tool LLM agents. In this example I'm using the pre-built tools provided by the framework, like:
 - **calculator**: for performing mathematical operations
 - **think**: for reasoning and decision-making
 - **current_time**: to get the current date and time
@@ -22,6 +22,7 @@ In this project we need to scrape webpages to retrieve information from internet
 With this information, to build the agent is pretty straightforward. The idea of agents is not to code everything from scratch, but to provide to the agent the needed tools to solve the problem, and let the agent figure out how to use them using the prompts. When we work with LLM we have two kinds of prompts: the system prompt and the user prompt. The system prompt is used to define the agent's behavior, while the user prompt is used to provide the input data.
 
 In this project I'm using those prompts:
+
 ```python
 from settings import BASE_DIR
 
