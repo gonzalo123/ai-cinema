@@ -1,4 +1,4 @@
-# Agentic IA for movie recommendations with Python and Strands Agents
+# Agentic AI for movie recommendations with Python and Strands Agents
 
 Context 1: I like to go to the cinema. I normally go to the cinema on Saturday afternoons, at the first showing. In the city where I live there are three cinemas and all belong to the same company called Sade. I normally check the cinema schedules on their website, [SadeCines.com](https://sadecines.com/), to see what's playing. Also, I track the movies I see on Letterboxd. There I have my [diary](https://letterboxd.com/gonzalo123/films/diary/) and also a [list](https://letterboxd.com/gonzalo123/list/cine-2025/detail/) with the movies I see in the cinema. I rate the movies when I finish watching them. My first impression. I do that not to share with others, only to have a personal record of what I like and dislike.
 
